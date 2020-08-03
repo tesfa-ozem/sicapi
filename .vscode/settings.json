@@ -1,0 +1,29 @@
+{
+    "python.linting.pylintEnabled": false,
+    "python.linting.flake8Enabled": true,
+    "python.linting.enabled": true,
+    "python.linting.flake8Args": [
+        "--max-line-length=120",
+        "--ignore=E303,E501,F401,E741,E402,"
+    ],
+    "python.testing.unittestArgs": [
+        "-v",
+        "-s",
+        ".",
+        "-p",
+        "*test.py"
+    ],
+    "python.testing.pytestEnabled": false,
+    "python.testing.nosetestsEnabled": false,
+    "python.testing.unittestEnabled": true,
+    "sqltools.connections": [
+        {
+            "database": "${workspaceFolder:sicapp}/app.db",
+            "driver": "SQLite",
+            "group": "sic",
+            "name": "app.db",
+            "previewLimit": 50
+        }
+    ],
+    "sqltools.useNodeRuntime": true
+}
